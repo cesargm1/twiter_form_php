@@ -51,21 +51,21 @@ svg{
 
 .main__h1{
     color: white;
-    padding: 3em;
+    padding: 2em;
 }
 
 .main__form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
+    width: 600px;
 }
 
 .form__inputs{
     display: flex;
     flex-direction: column;
-    gap: 2em;
-
+    gap: 1em;
 }
 
 .form__input{
@@ -74,15 +74,70 @@ svg{
     background-color: black;
     width: 300px;
     max-width: 100%; 
+    color: white;
+    touch-action: manipulation;
 }
+
+
+.section__link{
+    width: 100%;
+    display: flex;
+    color: #126095;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.section__link:active{
+    color: #126095 ;
+}
+
+.form__borm{
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    width: 300px;
+    max-width: 100%;
+    padding-top: 2em;
+}
+
+.form__borm__h3{
+    color: white;
+    display: flex;
+    gap: 1em;
+    
+}
+
+.form__p{
+    color: #b8bbbc;
+    margin-bottom: 2em;
+}
+
+.section__inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+select{
+    padding: .5em;
+    background-color: black;
+    max-width: 100%; 
+    color: white;
+    touch-action: manipulation;
+}
+
+.section__button{
+    padding: 1em;
+    border-radius: 25px;
+    margin-top: 3em;
+    background-color: #818788;
+}
+
 
 .footer__body{
     padding: 1em;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
 }
 
-
-.footer__p{
-    color: #b8bbbc;
-}
