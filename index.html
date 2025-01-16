@@ -54,7 +54,37 @@
 						si esta cuenta es para una empresa,una mascota u otra cosa.
 					</p>
 					<section class="section__inputs">
-						<input class="form__input" type="date" />
+						<input
+							type="number"
+							id="dia"
+							name="dia"
+							min="1"
+							max="31"
+							class="form__input"
+						/>
+						<select id="mes" name="mes" class="form__input">
+							<option value="enero">Enero</option>
+							<option value="febrero">Febrero</option>
+							<option value="marzo">Marzo</option>
+							<option value="abril">Abril</option>
+							<option value="mayo">Mayo</option>
+							<option value="junio">Junio</option>
+							<option value="julio">Julio</option>
+							<option value="agosto">Agosto</option>
+							<option value="septiembre">Septiembre</option>
+							<option value="octubre">Octubre</option>
+							<option value="noviembre">Noviembre</option>
+							<option value="diciembre">Diciembre</option>
+						</select>
+
+						<input
+							type="number"
+							id="anio"
+							name="anio"
+							min="1905"
+							max="2025"
+							class="form__input"
+						/>
 					</section>
 					<button class="section__button" type="submit">Siguente</button>
 				</section>
