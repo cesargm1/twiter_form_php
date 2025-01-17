@@ -1,82 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>twiter</title>
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>twiter</title>
-	<link rel="stylesheet" href="/css/style.css" />
-</head>
+	<body class="body">
+		<header class="boby__header">
+			<nav class="header__nav">
+				<ul class="header_ul--logo">
+					<li class="ul__li--icon">X</li>
+				</ul>
 
-<body class="body">
-	<header class="boby__header">
-		<nav class="header__nav">
-			<ul class="header_ul--logo">
-				<li class="ul__li--icon">X</li>
-			</ul>
+				<ul class="header__ul--icon">
+					<li class="ul__li--icon">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							class="bi bi-twitter-x"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+							/>
+							<a href="" target="_blank"></a>
+						</svg>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-			<ul class="header__ul--icon">
-				<li class="ul__li--icon">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-						class="bi bi-twitter-x" viewBox="0 0 16 16">
-						<path
-							d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-						<a href="" target="_blank"></a>
-					</svg>
-				</li>
-			</ul>
-		</nav>
-	</header>
+		<main class="body__main">
+			<h1 class="main__h1">Crea tu cuenta</h1>
 
-	<main class="body__main">
-		<h1 class="main__h1">Crea tu cuenta</h1>
+			<form class="main__form" action="">
+				<section class="form__inputs">
+					<input
+						class="form__input"
+						type="text"
+						name="name"
+						placeholder="Nombre"
+					/>
+					<input
+						class="form__input"
+						type="email"
+						name="email"
+						placeholder="Correo electronico"
+					/>
 
-		<form class="main__form" action="">
-			<section class="form__inputs">
-				<input class="form__input" type="text" placeholder="Nombre" />
-				<input class="form__input" type="text" placeholder="Correo electronico" />
-
-				<input class="form__input" type="password" placeholder="Contraseña" />
-				<a class="section__link" href="">Usar telefono</a>
-			</section>
-
-			<section class="form__borm">
-				<h3 class="form__borm__h3">Fecha nacimiento</h3>
-				<p class="form__p">
-					Esta informacion no sera publica. Confirma tu propia edad , incluso
-					si esta cuenta es para una empresa,una mascota u otra cosa.
-				</p>
-				<section class="section__inputs">
-					<input type="number" id="dia" name="dia" min="1" max="31" class="form__input" />
-					<select id="mes" name="mes" class="form__input">
-						<option value="enero">Enero</option>
-						<option value="febrero">Febrero</option>
-						<option value="marzo">Marzo</option>
-						<option value="abril">Abril</option>
-						<option value="mayo">Mayo</option>
-						<option value="junio">Junio</option>
-						<option value="julio">Julio</option>
-						<option value="agosto">Agosto</option>
-						<option value="septiembre">Septiembre</option>
-						<option value="octubre">Octubre</option>
-						<option value="noviembre">Noviembre</option>
-						<option value="diciembre">Diciembre</option>
-					</select>
-
-					<input type="number" id="anio" name="anio" min="1905" max="2025" class="form__input" />
+					<input
+						class="form__input"
+						type="password"
+						name="password"
+						placeholder="Contraseña"
+					/>
+					<a class="section__link" href="">Usar telefono</a>
 				</section>
-				<button class="section__button" type="submit">Siguente</button>
-			</section>
-		</form>
-	</main>
-	<footer class="footer__body">
-		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x"
-			viewBox="0 0 16 16">
-			<path
-				d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-			<a href="" target="_blank"></a>
-		</svg>
-	</footer>
-</body>
 
+				<section class="form__borm">
+					<h3 class="form__borm__h3">Fecha nacimiento</h3>
+					<p class="form__p">
+						Esta informacion no sera publica. Confirma tu propia edad , incluso
+						si esta cuenta es para una empresa,una mascota u otra cosa.
+					</p>
+					<section class="section__inputs">
+						<input
+							type="number"
+							id="dia"
+							name="day"
+							min="1"
+							max="31"
+							class="form__input"
+						/>
+						<select id="mes" name="month" class="form__input">
+							<option value="enero">Enero</option>
+							<option value="febrero">Febrero</option>
+							<option value="marzo">Marzo</option>
+							<option value="abril">Abril</option>
+							<option value="mayo">Mayo</option>
+							<option value="junio">Junio</option>
+							<option value="julio">Julio</option>
+							<option value="agosto">Agosto</option>
+							<option value="septiembre">Septiembre</option>
+							<option value="octubre">Octubre</option>
+							<option value="noviembre">Noviembre</option>
+							<option value="diciembre">Diciembre</option>
+						</select>
+
+						<input
+							type="number"
+							id="year"
+							name="year"
+							min="1905"
+							max="2025"
+							class="form__input"
+						/>
+					</section>
+					<button class="section__button" type="submit">Siguente</button>
+				</section>
+			</form>
+		</main>
+		<footer class="footer__body">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="16"
+				height="16"
+				fill="currentColor"
+				class="bi bi-twitter-x"
+				viewBox="0 0 16 16"
+			>
+				<path
+					d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+				/>
+				<a href="" target="_blank"></a>
+			</svg>
+		</footer>
+	</body>
 </html>
